@@ -5,9 +5,10 @@
 \usepackage[absolute,overlay]{textpos}
 \usepackage{fontspec}
 \usepackage{paracol}
-\usepackage{enumitem}
+\usepackage[inline]{enumitem}
 \usepackage{ragged2e}
 \usepackage{array}
+\usepackage{tabularx}
 
 \setmainfont{Lato}
 \newfontface\latohairline{Lato-Hairline}
@@ -21,171 +22,180 @@
 \setlength{\TPVertModule}{1cm}
 
 \begin{document}
-
-  \begin{textblock*}{5cm}(15.5cm, 0.5cm)
-    \small \latolight{Last updated: \today}
-  \end{textblock*}
-
   \begin{center}
-    \Huge \textbf{Amir Nakhoda}\\
-    \vspace{0.2cm}
-    \normalsize
-    \latolight{
-    +65 9449 0252 \textbar{} 
-    amirmoeeznakhoda@gmail.com \textbar{}
-    \href{https://www.linkedin.com/in/amir-nakhoda/}{\latolight{LinkedIn}} \textbar{}
-    \href{https://github.com/NakhodaAmir}{\latolight{GitHub}}
-    }
-    \makebox[\linewidth]{\rule{\paperwidth}{0.6pt}}
-  \end{center}
-    
-  \setlength{\columnsep}{0.5cm}
-  \columnratio{0.3}
-  \begin{paracol}{2}
-    \begin{leftcolumn}
-      %%%%%%%%%%COURSE WORK%%%%%%%%%%%%%%%
-      \Large\noindent\latolight{COURSE WORK}
-      \vspace{0.15cm}\\
-      \normalsize\latobold{TERTIARY}\\
-      \small\lato
-      Logic \& Mathematics\\
-      Data Analytics\\
-      Computational Thinking\\
-      User Experience \& Interface Design\\
-      Network Technology\\
-      IT Systems \& Essentials\\
-      Database Application Development\\
-      Website Development\\
-      Data Structures \& Algorithms\\
-      Game Modelling\\
-      Game Design\\
-      Game Development\\
-      Game Math \& Physics\\
-      Game AI\\
-      Programming w/ Game Engines\\
-      Mixed Reality Application Development
+      \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \normalsize\latolight +65 9449 0252 & \normalsize\latolight\href{https://www.linkedin.com/in/amir-nakhoda/}{LinkedIn}
+      \end{tabular*}
 
-      \vspace{0.35cm}
+      \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \normalsize\latolight amirmoeeznakhoda@gmail.com & \normalsize\latolight\href{https://github.com/NakhodaAmir}{GitHub}
+      \end{tabular*} 
 
-      \Large\noindent\latolight{PROJECTS}
-      \vspace{0.15cm}\\
-      \small\latobold\latobold\href{https://youtu.be/Mmlq38I_PQ8}{Game AI Final Project}\\
-      \small\lato Implemented AI using Finite State Machines and Behaviour Trees, and an A* pathfinding algorithm using C\#, Panda BT and Unity\\
-      \small\latobold\latobold\href{https://youtu.be/LhJZbvc6WNk}{Water \& Buoyancy Implementation}\\
-      \small\lato A self-directed learning project where I implemented the physical characteristics of water into Unity using C\#\\
-      \small\latobold\href{https://1907077j.wixsite.com/portfolio}{Pac-Man Machine Learning Project}\\
-      \small\lato An independent learning project focused on reinforced machine learning and AI implementation in Pac-Man under the Guided Learning Curriculum
-      \vspace{0.35cm}
-
-      \Large\noindent\latolight{AWARDS}
-      \vspace{0.15cm}\\
-      \normalsize\latobold 2022 
-      \small\latobold Edusave Certificate of Academic Achievement\\
-      \small\lato Top 25\% for good academic performance and conduct\\
-      \normalsize\latobold 2021 
-      \small\latobold Director's List\\
-      \small\lato Top 10\% for excellent performance in the academic year 2020/2021\\
-      \normalsize\latobold 2020 
-      \small\latobold Director's List\\
-      \small\lato Top 10\% for excellent performance in the academic year 2019/2020\\
-      \normalsize\latobold 2018 
-      \small\latobold Edusave Award for Achievement, Good Leadership and Service\\
-      \small\lato Top 15\% for excellence in conduct, leadership, service and co-curricular activities
-
-      \vspace{0.35cm}
-
-      \Large\noindent\latolight{SKILLS}
-      \vspace{0.15cm}\\
-      \normalsize\latobold{PROGRAMMING LANGUAGES}\\
-      \small\lato
-      C\# $\bullet$ Java $\bullet$ Python $\bullet$ Rust $\bullet$ HTML $\bullet$ CSS $\bullet$ JavaScript $\bullet$ MySQL $\bullet$ LaTeX $\bullet$ Lua $\bullet$ Powershell
-      \vspace{0.35cm}\\
-      \normalsize\latobold{TOOLS}\\ 
-      \small\lato
-      Microsoft Word $\bullet$ Excel $\bullet$ PowerPoint $\bullet$ Microsoft Visual Studio $\bullet$ Adobe Photoshop $\bullet$ Illustrator $\bullet$ Premiere Pro $\bullet$ XD $\bullet$ Google Docs $\bullet$ Sheets $\bullet$ Slides  $\bullet$ Unity $\bullet$ Maya $\bullet$ Git
-      \vspace{0.35cm}\\
-      \normalsize\latobold{DEVELOPMENT}\\
-      \small\lato
-      Full-Stack Web $\bullet$ Mobile $\bullet$ Desktop
-    \end{leftcolumn}
-    
-    \begin{rightcolumn}
+  \end{center} 
+  
+  \begin{center}
+    \begin{minipage}{1\textwidth}
       %%%%%%%%%%EDUCATION%%%%%%%%%%%%%%%
-      \Large\noindent\latolight{EDUCATION}
-      \vspace{0.15cm}\\
-      \normalsize\latobold{TEMASEK POLYTECHNIC (TP)} \textbar{} School of Informatics \& IT \hfill\small\latolight{Apr 2019 - Apr 2022}
-      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-        \item \lato Diploma with Merit in Game Design \& Development (GDD)
-          \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-            \item \lato Awarded to the Top 10\% of the graduating cohort
-          \end{itemize}
-        \item \lato Cumulative Grade Point Average: 3.69/4.00
-      \end{itemize}
-            
-      \vspace{0.35cm}
+      \normalsize\noindent\latobold{Education}\\[-0.25cm]
+      \makebox[\linewidth]{\rule{1.02\linewidth}{0.3pt}}
 
-      \normalsize\noindent\latobold ST. PATRICK'S SECONDARY SCHOOL (SPS) \hfill\small\latolight{Jan 2014 - Dec 2018}
+      \noindent
+      \makebox[0pt][l]{\normalsize\latobold{Singapore, Singapore}}%
+      \hfill
+      \makebox[0pt]{\normalsize\latobold{Temasek Polytechnic (TP) | School of Informatics \& IT}}%
+      \hfill
+      \makebox[0pt][r]{\small\latobold{Apr 2019 - Apr 2022}}
+
+      \vspace{0.15cm}
+
       \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-        \item \lato Singapore Cambridge GCSE O Level Certificate
+        \item \small\lato Diploma with Merit in Game Design \& Development (GDD) - Top 10\% of graduating cohort            
       \end{itemize}
-      \vspace{0.35cm}
+      \small\latobold Awards: \lato Director's List (2019/2020, 2020/2021) - Top 10\% of academic cohort 
+
+      \vspace{0.25cm}
+
+      \noindent
+      \makebox[0pt][l]{\normalsize\latobold{Singapore, Singapore}}%
+      \hfill
+      \makebox[0pt]{\normalsize\latobold{St. Patrick's Secondary School (SPS)}}%
+      \hfill
+      \makebox[0pt][r]{\small\latobold{Jan 2014 - Dec 2018}}
+
+      \vspace{0.15cm}
+
+      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+        \item \small\lato Singapore Cambridge GCSE O Level Certificate
+      \end{itemize}
+      \small\latobold Awards: \lato Edusave Award for Achievement, Good Leadership, and Service - Top 15\% for excellence in conduct, leadership, service and co-curricular activities\\
+
       %%%%%%%%%%EXPERIENCE%%%%%%%%%%%%%%%
-      \Large\noindent\latolight{WORK EXPERIENCE}
-      \vspace{0.15cm}\\
-      \normalsize\latobold{SINGAPORE POLICE FORCE} \textbar{} Airport Police Division \hfill\small\latolight{Aug 2022 - Aug 2024}\\
-      \latobold Patrol Officer
-        \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-          \item \lato To protect Singapore Civil Aviation against crime.
-        \end{itemize}
-      \vspace{0.35cm}
-      \normalsize\noindent\latobold{SUPREME COURT} \textbar{} Singapore Judicial College \hfill\small\latolight{Jul 2021 - Feb 2022}\\
-      \latobold Project Executive Intern
-        \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-          \item \lato Designed and developed educational games to enhance learning of the school's modules, using C\# and Unity
-          \item \lato Designed and developed an educational video to express the school's pedagogical concepts, using Adobe Premiere Pro, Illustrator \& Photoshop.
-        \end{itemize}
-      \vspace{0.35cm}
-      \Large\noindent\latolight{CO-CURRICULAR ACTIVITIES}
-      \vspace{0.15cm}\\
-      \normalsize\latobold{TP \textbar{} GDD \textbar{} Student Interest Group} \hfill\small\latolight{Apr 2019 - Apr 2022}\\
-      \latobold President - Vice-President - Honorary Secretary
-      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-        \item \lato Led a student-run club focused on organizing events to enrich GDD student life and support academic learning.      
-        \item \lato Oversaw initiatives such as academic-support workshops and talent showcases, including a T-Shirt design competition.
-      \end{itemize}
-      \vspace{0.35cm}
-      \normalsize\latobold{SPS \textbar{} National Cadet Corps (NCC) (AIR)} \hfill\small\latolight{Jan 2015 - Dec 2018}\\
-      \latobold 1st Sergeant - 3rd Sergeant - Corporal - Lance Corporal
-      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-        \item \lato Represented school in the 2017 National Day and International St. Patrick's Day Parade
-        \item \lato Represented school in the 2016 \& 2017 NCC Annual Freestyle Drill competition
-        \item \lato Represented school in the 2016 HQ Annual Best Unit Competition and obtained the Silver Award
-      \end{itemize}
-      \vspace{0.35cm}
-      \normalsize\latobold{SPS \textbar{} Prefectorial Board} \hfill\small\latolight{Jan 2015 - Dec 2018}\\
-      \latobold Senior Prefect
-      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-        \item \lato Served as a student leader and role model within the school community
-        \item \lato Provided support and guidance at key school events, such as Open House
-        \item \lato Facilitated camps including the Secondary 1 Orientation and Patrician Leadership Training Camp (PLTC)
-      \end{itemize}
-    \vspace{0.35cm}
-    \Large\noindent\latolight{VOLUNTEER EXPERIENCE}
-    \vspace{0.15cm}\\
-    \normalsize\latobold{JAPANESE EXCHANGE PROGRAMME} \hfill\small\latolight{120hrs - 2019}\\
-    \latobold Organiser
-    \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-      \item \lato Hosted Japanese exchange students from KNIT.HI during their visit to Singapore
-      \item \lato Accompanied and oriented students through key cultural, educational, and heritage sites in Singapore 
-    \end{itemize}
-    \vspace{0.35cm}
-    \normalsize\latobold{COMMUNITY LABORATORY PROJECT} \hfill\small\latolight{24hrs - 2018}\\
-    \latobold Committee Member
-    \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
-      \item \lato Co-led in a student initiated project, with the purpose to improve the well-being of the elderly at an old folks home      
-      \item \lato Produced and published a book compiling the residents' stories and recipes to provide a means to foster connection with their families
-    \end{itemize}
-    \end{rightcolumn}  
-  \end{paracol}
+      \normalsize\noindent\latobold{Work Experience}\\[-0.25cm]
+      \makebox[\linewidth]{\rule{1.02\linewidth}{0.3pt}}
 
+      \noindent
+      \makebox[0pt][l]{\normalsize\latobold{Patrol Officer}}%
+      \hfill
+      \makebox[0pt]{\normalsize\latobold{Singapore Police Force | Airport Police Division}}%
+      \hfill
+      \makebox[0pt][r]{\small\latobold{Aug 2022 - Aug 2024}}
+
+      \vspace{0.15cm}
+
+      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+        \item \small\lato To protect Singapore Civil Aviation against crime.
+      \end{itemize}
+
+      \vspace{0.25cm}
+
+      \noindent
+      \makebox[0pt][l]{\normalsize\latobold{Project Executive Intern}}%
+      \hfill
+      \makebox[0pt]{\normalsize\latobold{Singapore Supreme Court | Singapore Judicial College}}%
+      \hfill
+      \makebox[0pt][r]{\small\latobold{Jul 2021 - Feb 2022}}
+
+      \vspace{0.15cm}
+
+      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+        \item \small\lato Designed and developed educational games to enhance learning of the school's modules, using \latobold{C\#} \lato and \latobold{Unity}.
+        \item \small\lato Storyboarded and produced an educational video to express the school's pedagogical concepts, using \latobold{Adobe Premiere Pro, Illustrator \& Photoshop}.\\
+      \end{itemize}
+
+      %%%%%%%%%%CCA%%%%%%%%%%%%%%%
+      \normalsize\noindent\latobold{Co-Curricular Activities}\\[-0.25cm]
+      \makebox[\linewidth]{\rule{1.02\linewidth}{0.3pt}}
+
+      \noindent
+      \makebox[0pt][l]{\normalsize\latobold{President}}%
+      \hfill
+      \makebox[0pt]{\normalsize\latobold{TP | GDD | Student Interest Group}}%
+      \hfill
+      \makebox[0pt][r]{\small\latobold{Apr 2019 - Apr 2022}}
+
+      \vspace{0.15cm}
+
+      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+        \item \small\lato Led a student-run club of 25 members organizing events to enrich GDD student life and support academic learning.      
+        \item \small\lato Oversaw initiatives such as academic workshops, open house and talent showcases, including a T-Shirt design competition, engaging up to 60 students.
+      \end{itemize}
+
+      \vspace{0.25cm}
+
+      \noindent
+      \makebox[0pt][l]{\normalsize\latobold{1st Sergeant}}%
+      \hfill
+      \makebox[0pt]{\normalsize\latobold{SPS | National Cadet Corps (NCC) Air}}%
+      \hfill
+      \makebox[0pt][r]{\small\latobold{Jan 2015 - Dec 2018}}
+
+      \vspace{0.15cm}
+
+      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+        \item \small\lato Represented school in the National Day Parade (2017), International St. Patrick's Day Parade (2017), NCC Annual Freestyle Drill Competition (2016 \& 2017) and the HQ Annual Best Unit Competition (2016), obtaining the Silver Award.
+      \end{itemize}
+      
+      \vspace{0.25cm}
+
+      \noindent
+      \makebox[0pt][l]{\normalsize\latobold{Senior Prefect}}%
+      \hfill
+      \makebox[0pt]{\normalsize\latobold{SPS | Prefectorial Board}}%
+      \hfill
+      \makebox[0pt][r]{\small\latobold{Jan 2015 - Dec 2018}}
+
+      \vspace{0.15cm}
+
+      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+        \item \small\lato Served as a student leader and role model within the school community and facilitated camps such as the Secondary 1 Orientation Camp (X students) and the Patrician Leadership Training Camp (X students).
+        \item \small\lato Provided support and guidance at key school events, such as Open House.\\
+      \end{itemize}
+
+      %%%%%%%%%%Volunteer Experience%%%%%%%%%%%%%%%
+      \normalsize\noindent\latobold{Volunteer Experience}\\[-0.25cm]
+      \makebox[\linewidth]{\rule{1.02\linewidth}{0.3pt}}
+
+      \noindent
+      \makebox[0pt][l]{\normalsize\latobold{Organiser}}%
+      \hfill
+      \makebox[0pt]{\normalsize\latobold{Japanese Exchange Programme}}%
+      \hfill
+      \makebox[0pt][r]{\small\latobold{120hrs - 2019}}
+
+      \vspace{0.15cm}
+
+      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+        \item \small\lato Hosted X Japanese exchange students from KNIT.HI during their visit to Singapore, guiding them through key cultural, educational, and heritage sites in Singapore.
+      \end{itemize}
+
+      \vspace{0.25cm}
+
+      \noindent
+      \makebox[0pt][l]{\normalsize\latobold{Committe Member}}%
+      \hfill
+      \makebox[0pt]{\normalsize\latobold{Community Laboratory Project}}%
+      \hfill
+      \makebox[0pt][r]{\small\latobold{24hrs - 2018}}
+
+      \vspace{0.15cm}
+
+      \begin{itemize}[left=0pt, labelsep=0.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+        \item \small\lato Co-led a student-initiated project with a team of 5 to improve the well-being of around 100 elderly residents at a nursing home; produced and published a book compiling their stories and recipes to help foster connection with their families.\\
+      \end{itemize}
+
+      %%%%%%%%%%Projects%%%%%%%%%%%%%%%
+      \normalsize\noindent\latobold{Projects}\\[-0.25cm]
+      \makebox[\linewidth]{\rule{1.02\linewidth}{0.3pt}}
+      \normalsize\latobold{Testing\\}
+
+      %%%%%%%%%%Skills%%%%%%%%%%%%%%%
+      \normalsize\noindent\latobold{Skills}\\[-0.25cm]
+      \makebox[\linewidth]{\rule{1.02\linewidth}{0.3pt}}
+      
+      \normalsize\latobold{Languages:} \small\lato{C\#, Java, Python, HTML, CSS, JavaScript, SQL, Rust, Lua, Latex, PowerShell\\}
+      \normalsize\latobold{Tools:} \small\lato{Git, Maya, Unity}
+
+
+    \end{minipage}
+  \end{center}
 \end{document}
